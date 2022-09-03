@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #F4F4F4;
+}
+header{
+    width: 100%;
+    height: 10vh;
+}
+header h1{
+    line-height: 90px;
+    text-align: center;
+    font-size: 3em;
+    color: #373737;
+}
+main{
+    width: 100%;
+    height: 85vh;
+}
+.encriptador{
+    display: flex;
+}
+.texto{
+    width: 60%;
+    height: 85vh;
+}
+#texto{
+    width: 70%;
+    height: 60%;
+    border-radius: 20px;
+    border: none;
+    margin-left: 15%;
+    margin-top: 5%;
+    background-color: #DCD0C0;
+    color: #373737;
+    text-align: justify;
+    resize: none;
+    padding: 1rem;
+    font-size: 25px;
+}
+#restriccion{
+    font-size: 15px;
+    margin: 2em 0 2em 18%;
+    color: #373737;
+}
+.botones-texto{
+    margin-left: 15%;
+}
+button{
+    border: solid 1px #000000;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0.4rem 0px;
+    width: 250px;
+    cursor: pointer;
+}
+#boton-encriptar{
+    margin-left: 50px;
+    background-color: #373737;
+    color: #F4F4F4;
+    transition: 1s all;
+}
+#boton-encriptar:hover{
+    background: #373737;
+    transform: scale(1.1);
+}
+#boton-encriptar:active{
+    border: solid 2px #373737;
+    background-color: #373737;
+    color: #C0B283;
+}
+#boton-desencriptar{
+    margin-left: 50px;
+    border: #C0B283;
+    background-color: #C0B283;
+    color: #F4F4F4;
+    transition: 1s all;
+}
+#boton-desencriptar:hover{
+    background: #C0B283;
+    transform: scale(1.1);
+}
+#boton-desencriptar:active{
+    background-color: #C0B283;
+    color: #373737;
+}
+.resultado{
+    width: 40%;
+    height: 85vh;
+}
+#resultado{
+    width: 70%;
+    height: 61%;
+    border-radius: 20px;
+    border: none;
+    margin-top: 7%;
+    background-color: #DCD0C0;
+    color: #373737;
+    resize: none;
+    padding: 1rem;
+    text-align: justify;
+    font-size: 25px;
+}
+#copiar{
+    margin-left: 5%;
+    margin-top: 2em;
+    border: #C0B283;
+    background-color: #C0B283;
+    color: #F4F4F4;
+    transition: 1s all;
+}
+#copiar:hover{
+    background: #C0B283;
+    transform: scale(1.1);
+}
+#copiar:active{
+    border: solid 2px #C0B283;
+    background-color: #C0B283;
+    color: #373737;
+}
+footer{
+    width: 100%;
+    height: 5vh;
+    color: #373737;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: center;
+}
+/*Adaptacion a telefono*/
+@media (max-width:480px){
+    main{
+        height: 100%;
+    }
+    header{
+        height: auto;
+    }
+    header h1{
+        line-height: 50px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .encriptador{
+        display: block;
+    }
+    .texto{
+        width: 100%;
+        height: 100%;
+    }
+    #texto{
+        width: 65%;
+        height: 13em;
+    }
+    #restriccion{
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    .botones-texto{
+        margin-left: 15%;
+    }
+    #boton-encriptar, #boton-desencriptar{
+        margin-left: 0px;
+        width: 80%;
+    }
+    .resultado{
+        margin-top: 1em;
+        width: 100%;
+        height: 100%;
+    }
+    #resultado{
+        width: 65%;
+        height: 13em;
+        margin-top: 1em;
+        margin-left: 15%;
+    }
+    .btnCopiar{
+        margin-left: 15%;
+        width: 100%;
+    }
+    #copiar{
+        margin-left: 0px;
+        width: 68%;
+    }
+    footer{
+        margin-top: 1em;
+        height: 100%;
+    }
+}
